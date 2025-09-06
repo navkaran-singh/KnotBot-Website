@@ -12,6 +12,7 @@ import Terms from "@/react-app/pages/Terms";
 import Contact from "@/react-app/pages/Contact";
 import NotFound from "@/react-app/pages/NotFound";
 
+// home page
 
 export default function App() {
   return (

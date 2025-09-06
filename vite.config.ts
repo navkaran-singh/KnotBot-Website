@@ -5,6 +5,7 @@ import { cloudflare } from "@cloudflare/vite-plugin";
 
 export default defineConfig({
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  base: "/KnotBot-Website/",
   plugins: [react(), cloudflare()],
   server: {
     allowedHosts: true,

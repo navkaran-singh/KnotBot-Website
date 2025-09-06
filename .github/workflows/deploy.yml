@@ -28,13 +28,9 @@ jobs:
       - name: Build Project 🏗️
         run: npm run build
 
-      # This is the diagnostic step we need to see the output from
-      - name: Verify Build Output 🔍
-        run: ls -R ./dist
-
       - name: Deploy to GitHub Pages 🚀
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./dist/client # <-- This is the final, correct path
           force_orphan: true

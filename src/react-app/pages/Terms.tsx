@@ -84,7 +84,7 @@ export default function Terms() {
               </h2>
               <p className="text-gray-700 leading-relaxed">
                 If you have any questions about these Terms of Service, please
-                contact us at support@knotbot.ai.
+                contact us.
               </p>
             </section>
           </div>

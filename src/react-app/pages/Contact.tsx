@@ -1,5 +1,4 @@
-﻿import Header from "@/react-app/components/layout/Header";
-import Footer from "@/react-app/components/Footer";
+﻿import Footer from "@/react-app/components/Footer";
 import Navigation from "../components/Navigation";
 
 export default function Contact() {

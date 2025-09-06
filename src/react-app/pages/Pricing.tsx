@@ -1,5 +1,4 @@
 ﻿import { Check } from "@phosphor-icons/react";
-import Header from "@/react-app/components/layout/Header";
 import Footer from "@/react-app/components/Footer";
 import Button from "@/react-app/components/ui/Button";
 import Card from "@/react-app/components/ui/Card";

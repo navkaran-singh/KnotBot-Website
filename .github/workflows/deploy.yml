@@ -10,8 +10,8 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    permissions: # <-- ADD THIS
-      contents: write # <-- AND THIS
+    permissions:
+      contents: write
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20" # Use a recent LTS version of Node.js
+          node-version: "20"
           cache: "npm"
 
       - name: Install Dependencies 📦
@@ -29,10 +29,10 @@ jobs:
         run: npm run build
 
       - name: Verify Build Output 🔍
-        run: ls -R ./docs
+        run: ls -R ./dist # <-- Corrected to 'dist'
 
       - name: Deploy to GitHub Pages 🚀
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs # The folder that 'npm run build' creates
+          publish_dir: ./dist # <-- Corrected to 'dist'

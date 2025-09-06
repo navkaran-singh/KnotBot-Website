@@ -53,7 +53,7 @@ export default function Dashboard() {
   ];
 
   const roadmapItems = [
-    { problem: "Climbing Stairs", difficulty: "Easy", status: "completed" },
+    { problem: "Climbing Stairs", difficulty: "Medium", status: "completed" },
     { problem: "House Robber", difficulty: "Medium", status: "in-progress" },
     {
       problem: "Longest Common Subsequence",

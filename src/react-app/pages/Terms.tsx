@@ -15,7 +15,9 @@ export default function Terms() {
                 Service
               </span>
             </h1>
-            <p className="text-xl text-gray-600">Last updated: January 2024</p>
+            <p className="text-xl text-gray-600">
+              Last updated: September 2025
+            </p>
           </div>
 
           <div className="prose prose-lg mx-auto space-y-8">

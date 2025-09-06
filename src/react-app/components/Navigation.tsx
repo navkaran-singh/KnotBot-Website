@@ -8,6 +8,7 @@ const navItems = [
   { name: "Contact", href: "/contact" },
   { name: "Privacy", href: "/privacy" },
   { name: "Terms", href: "/terms" },
+  { name: "Refund Policy", href: "/refund-policy" },
   // Add other navigation links as needed.
 ];
 

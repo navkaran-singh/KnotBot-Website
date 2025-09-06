@@ -11,6 +11,7 @@ import Privacy from "@/react-app/pages/Privacy";
 import Terms from "@/react-app/pages/Terms";
 import Contact from "@/react-app/pages/Contact";
 import NotFound from "@/react-app/pages/NotFound";
+import RefundPolicy from "./pages/RefundPolicy";
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/refund-policy" element={<RefundPolicy />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

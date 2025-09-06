@@ -1,11 +1,12 @@
+// vite.config.ts
+
 import path from "path";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { cloudflare } from "@cloudflare/vite-plugin";
 
 export default defineConfig({
-  // Use process.env.NODE_ENV to check the mode
-  base: process.env.NODE_ENV === "production" ? "/KnotBot-Website/" : "/",
+  // The 'base' line has been removed
   plugins: [react(), cloudflare()],
   server: {
     allowedHosts: true,

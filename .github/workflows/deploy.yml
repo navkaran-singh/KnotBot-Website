@@ -28,12 +28,9 @@ jobs:
       - name: Build Project 🏗️
         run: npm run build
 
-      - name: Verify Build Output 🔍
-        run: ls -R ./dist
-
       - name: Deploy to GitHub Pages 🚀
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/client
-          destination_dir: .
+          publish_dir: ./dist
+          force_orphan: true # This forces a clean deployment

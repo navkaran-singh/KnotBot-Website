@@ -31,8 +31,9 @@ jobs:
       - name: Verify Build Output 🔍
         run: ls -R ./dist # <-- Corrected to 'dist'
 
-      - name: Deploy to GitHub Pages 🚀
+     - name: Deploy to GitHub Pages 🚀
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist # <-- Corrected to 'dist'
+          publish_dir: ./dist
+          destination_dir: .  # <-- ADD THIS LINE TO FORCE DEPLOY TO ROOT

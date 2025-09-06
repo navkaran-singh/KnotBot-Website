@@ -2,6 +2,7 @@
   "dependencies": {
     "@hono/zod-validator": "^0.5.0",
     "@phosphor-icons/react": "^2.1.10",
+    "gh-pages": "^6.3.0",
     "hono": "4.7.7",
     "lucide-react": "^0.510.0",
     "react": "19.0.0",
@@ -29,14 +30,17 @@
     "vite": "^7.1.3",
     "wrangler": "^4.33.0"
   },
-  "name": "mocha-app",
+  "name": "KnotBot",
+  "homepage": "https://navkaran-singh.github.io/KnotBot-Website/",
   "private": true,
   "scripts": {
     "build": "vite build",
     "cf-typegen": "wrangler types",
     "check": "tsc && vite build && wrangler deploy --dry-run",
     "dev": "vite",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist/client"
   },
   "type": "module",
   "version": "0.0.0"

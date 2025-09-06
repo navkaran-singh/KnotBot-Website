@@ -52,6 +52,7 @@ export default function Dashboard() {
     { topic: "Arrays & Strings", score: 85, color: "bg-green-500" },
   ];
 
+  // gemini sucks btw
   const roadmapItems = [
     { problem: "Climbing Stairs", difficulty: "Easy", status: "completed" },
     { problem: "House Robber", difficulty: "Medium", status: "in-progress" },

@@ -40,7 +40,7 @@
     "dev": "vite",
     "lint": "eslint .",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist/client"
+    "deploy": "gh-pages -d dist"
   },
   "type": "module",
   "version": "0.0.0"
